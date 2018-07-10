@@ -12,6 +12,10 @@ This is a tutorial on how to's for create KVM guests.
 # launch artifactory in Host
 `docker run --name artifactory-pro -d -v /opt/jfrog/artifactory:/var/opt/jfrog/artifactory -p 8081:8081 docker.bintray.io/jfrog/artifactory-oss:latest`
 
+# launch gitlab in host
+`https://docs.gitlab.com/omnibus/settings/backups.html`
+
+
 # Creating Logical Volumes
 
 ```
