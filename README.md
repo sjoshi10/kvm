@@ -5,13 +5,14 @@ https://www.linuxtechi.com/install-kvm-hypervisor-on-centos-7-and-rhel-7/
 
 This is a tutorial on how to's for create KVM guests. 
 
-Add the following to ifcfg-br0:
+Add the following to ifcfg-em1:
 ```
 NETWORKING=yes
 HOSTNAME=maincentos
 GATEWAY=192.168.1.1
 BRIDGE=br0
 ```
+Add the following to ifcfg-br0:
 
 # Volume for Guest
 `virsh vol-create-as <pool-name> <volume-name> 12G`
