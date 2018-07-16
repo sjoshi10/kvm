@@ -12,7 +12,15 @@ HOSTNAME=maincentos
 GATEWAY=192.168.1.1
 BRIDGE=br0
 ```
+
 Add the following to ifcfg-br0:
+```
+TYPE=Bridge
+BOOTPROTO=dhcp
+NAME=br0
+DEVICE=br0
+ONBOOT=yes
+```
 
 # Volume for Guest
 `virsh vol-create-as <pool-name> <volume-name> 12G`
