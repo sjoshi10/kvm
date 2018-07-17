@@ -3,6 +3,8 @@
 # Install KVM
 https://www.linuxtechi.com/install-kvm-hypervisor-on-centos-7-and-rhel-7/
 
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/index
+
 This is a tutorial on how to's for create KVM guests. 
 
 Add the following to ifcfg-em1:
