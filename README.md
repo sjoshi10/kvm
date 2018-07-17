@@ -54,3 +54,9 @@ mount /dev/vmgroup/vm_volume /vm-volume
 ```
 
 moving logical volume to different host - http://tldp.org/HOWTO/LVM-HOWTO/recipemovevgtonewsys.html
+
+# Launch VM
+
+```
+virt-install --name kubetest --memory 4096 --vcpus 2 --disk /vm-data/rootvol  --location /tmp/CentOS-7-x86_64-Minimal-1804.iso --os-variant linux --initrd-inject ks.cfg --extra-args="ks=file:/ks.cfg console=tty0 console=ttyS0,115200n8" --nographics
+```
