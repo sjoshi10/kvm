@@ -69,3 +69,5 @@ yum install 389-ds
 setup-ds-admin.pl
 ```
 http://directory.fedoraproject.org/docs/389ds/download.html
+
+`systemctl start dirsrv-admin`
