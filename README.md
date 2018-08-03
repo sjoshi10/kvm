@@ -71,3 +71,9 @@ setup-ds-admin.pl
 http://directory.fedoraproject.org/docs/389ds/download.html
 
 `systemctl start dirsrv-admin`
+
+# Using LDAP
+https://access.redhat.com/documentation/en-US/Red_Hat_Directory_Server/8.2/html/Administration_Guide/Examples-of-common-ldapsearches.html
+
+`ldapsearch -D "cn=directory manager"  -p 389 -b "dc=npmake,dc=io" -s sub "(objectclass=*)" -h ldap.npmake.io -w password`
+``
