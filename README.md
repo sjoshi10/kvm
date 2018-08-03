@@ -75,5 +75,7 @@ http://directory.fedoraproject.org/docs/389ds/download.html
 # Using LDAP
 https://access.redhat.com/documentation/en-US/Red_Hat_Directory_Server/8.2/html/Administration_Guide/Examples-of-common-ldapsearches.html
 
+https://access.redhat.com/documentation/en-US/Red_Hat_Directory_Server/8.2/html/Administration_Guide/Configuring_Directory_Databases.html
+
 `ldapsearch -D "cn=directory manager"  -p 389 -b "dc=npmake,dc=io" -s sub "(objectclass=*)" -h ldap.npmake.io -w password`
 ``
