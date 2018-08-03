@@ -78,5 +78,5 @@ https://access.redhat.com/documentation/en-US/Red_Hat_Directory_Server/8.2/html/
 https://access.redhat.com/documentation/en-US/Red_Hat_Directory_Server/8.2/html/Administration_Guide/Configuring_Directory_Databases.html
 
 `ldapsearch -D "cn=directory manager"  -p 389 -b "dc=npmake,dc=io" -s sub "(objectclass=*)" -h ldap.npmake.io -w password`
-``
+
 add user: `ldapmodify -D "cn=directory manager"  -p 389 -h ldap.npmake.io -w password -f saurab.ldif`
