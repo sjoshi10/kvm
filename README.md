@@ -96,6 +96,7 @@ ipa-server-install
 https://www.freeipa.org/page/Quick_Start_Guide#Adding_your_first_user
 ```
  kinit admin
+ ipa config-mod --defaultshell=/bin/bash
  ipa user-add 
  ipa passwd sjoshi
 ```
