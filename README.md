@@ -107,3 +107,6 @@ https://www.freeipa.org/page/Quick_Start_Guide#Adding_your_first_user
 ipa-client-install --server test.fios-router.home --domain test.fios-router.home  -w password --principal admin
 authconfig --enablemkhomedir --update
 ```
+
+# FreeIPA DNS 
+https://www.freeipa.org/page/DNS
