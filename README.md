@@ -92,6 +92,13 @@ firewall-cmd --reload
 yum install ipa-server
 ipa-server-install
 ```
+# Add First User
+```
+ kinit admin
+ ipa user-add 
+ ipa passwd sjoshi
+```
+
 # FreeIPA CLient Install 
 ```
 ipa-client-install --server test.fios-router.home --domain test.fios-router.home  -w password --principal admin
