@@ -80,8 +80,17 @@ https://access.redhat.com/documentation/en-US/Red_Hat_Directory_Server/8.2/html/
 `ldapsearch -D "cn=directory manager"  -p 389 -b "dc=npmake,dc=io" -s sub "(objectclass=*)" -h ldap.npmake.io -w password`
 
 add user: `ldapmodify -D "cn=directory manager"  -p 389 -h ldap.npmake.io -w password -f saurab.ldif`
-
-# IPA CLient
+# FreeIPA Server Install
+```
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=88/tcp
+firewall-cmd --permanent --add-port=389/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --permanent --add-port=888/tcp
+firewall-cmd --permanent --add-port=88/udp
+firewall-cmd --reload
+```
+# FreeIPA CLient Install 
 ```
 ipa-client-install --server test.fios-router.home --domain test.fios-router.home  -w password --principal admin
 authconfig --enablemkhomedir --update
