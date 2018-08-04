@@ -89,6 +89,8 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --permanent --add-port=888/tcp
 firewall-cmd --permanent --add-port=88/udp
 firewall-cmd --reload
+yum install ipa-server
+ipa-server-install
 ```
 # FreeIPA CLient Install 
 ```
