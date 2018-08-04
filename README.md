@@ -25,7 +25,12 @@ NAME=br0
 DEVICE=br0
 ONBOOT=yes
 ```
-
+# Create Volume Pool 
+```
+virsh pool-define-as guest_images dir - - - - "/vm-data/"
+virsh pool-start guest_images
+virsh pool-autostart guest_images
+```
 # Volume for Guest
 `virsh vol-create-as <pool-name> <volume-name> 12G`
 
