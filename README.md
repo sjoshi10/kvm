@@ -93,6 +93,7 @@ yum install ipa-server
 ipa-server-install
 ```
 # Add First User
+https://www.freeipa.org/page/Quick_Start_Guide#Adding_your_first_user
 ```
  kinit admin
  ipa user-add 
