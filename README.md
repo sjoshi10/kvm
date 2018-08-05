@@ -119,3 +119,6 @@ configure clients to use sudo rule: https://access.redhat.com/documentation/en-u
 
 # FreeIPA DNS 
 https://www.freeipa.org/page/DNS
+
+# LDAP Commands
+`ldapsearch -Y GSSAPI -b "dc=taskit,dc=com"` searches everything under rootdn
