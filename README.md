@@ -112,6 +112,7 @@ https://www.freeipa.org/page/Quick_Start_Guide#Adding_your_first_user
 ipa-client-install --server test.fios-router.home --domain test.fios-router.home  -w password --principal admin
 authconfig --enablemkhomedir --update
 ```
+configure clients to use sudo rule: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/identity_management_guide/config-sudo-clients
 
 # FreeIPA DNS 
 https://www.freeipa.org/page/DNS
